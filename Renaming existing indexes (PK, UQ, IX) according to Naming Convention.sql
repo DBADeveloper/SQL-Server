@@ -108,6 +108,8 @@ BEGIN
 
 END
 
+IF OBJECT_ID(N'tempdb..#t') IS NOT NULL DROP TABLE #t
+
 PRINT('Processed ' + CONVERT(varchar(11), @Id-1) + ' objects')
 
 SET NOCOUNT OFF
